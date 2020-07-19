@@ -43,7 +43,7 @@ const initiator = (rows, cols) => {
     next_gen[i] = new Array(cols);
   }
   for (let i = 0; i < rows; i++) {
-    for (let j = 0; j < rows; j++) {
+    for (let j = 0; j < cols; j++) {
       if (input[i][j] == "X" || input[i][j] == "x") {
         cur_gen[i][j] = 1;
       }
